@@ -8,7 +8,7 @@ metadata:
 
   labels:
 
-    app: todo-app
+    app: todo-app1
 
 spec:
 
