@@ -1,38 +1,40 @@
-# django-todo
-A simple todo app built with django
+Write Django Project (manage.py, settings.py, etc.)
 
-![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
-### Setup
-To get this repository, run the following command inside your git enabled terminal
-```bash
-$ git clone https://github.com/shreys7/django-todo.git
-```
-You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
+Create a Dockerfile
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+Use python:3.11 base image
 
-```bash
-$ python manage.py makemigrations
-```
+Install Django
 
-This will create all the migrations file (database migrations) required to run this App.
+Copy project files
 
-Now, to apply this migrations run the following command
-```bash
-$ python manage.py migrate
-```
+Expose port 8000
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
-```bash
-$ python manage.py createsuperuser
-```
+Run Django server
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+Build Docker Image
+docker build -t my-django-app .
+Run Docker Container
 
-```bash
-$ python manage.py runserver
-```
+docker run -p 8000:8000 my-django-app
+Push Code to GitHub Repository
 
-Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
+Branch: main or develop
 
-Cheers and Happy Coding :)
+Create Jenkins Pipeline
+
+Pull code from GitHub
+
+Build Docker image
+
+Run container
+
+Run database migrations
+
+Access Django App
+
+URL: http://43.205.98.195:8000
+
+
+
+https://github.com/raginim2456/django-cicd/blob/main/staticfiles/TodoApp.png
